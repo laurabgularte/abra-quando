@@ -13,6 +13,11 @@ Este repositório contém a estrutura de um site onde o usuário é recebido por
 
 O objetivo é criar uma conexão emocional através da tecnologia, permitindo que presentes sentimentais ultrapassem barreiras físicas.
 
+## 🎁  Preview: Onde a magia acontece. Cada envelope guarda um momento especial pronto para ser aberto.
+
+![Demonstração do Projeto](./demonstracao.png)
+![Demonstração do Projeto](./demonstracao2.png)
+
 ## ✨ Funcionalidades
 
 - **Navegação Simples:** Design focado na experiência do usuário e na facilidade de interação.
@@ -28,8 +33,6 @@ O projeto foi construído utilizando as seguintes tecnologias:
 * **CSS3:** Para estilização, layout (Flexbox/Grid) e animações.
 * **JavaScript:** Para a lógica de exibição das mensagens e interatividade.
 
-![Demonstração do Projeto](./demonstracao.png)
-![Demonstração do Projeto](./demonstracao2.png)
 
 ## 🚀 Como Executar o Projeto
 
