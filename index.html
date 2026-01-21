@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Para o meu amor</title>
+    <style>
+        body {
+            background-color: #fce4ec; /* Rosa bem clarinho */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        h1 { color: #d81b60; margin-bottom: 30px; text-align: center; }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #f06292;
+        }
+
+        .card h3 {
+            color: #ad1457;
+            font-size: 1.1rem;
+        }
+
+        .icon { font-size: 2rem; margin-bottom: 10px; }
+
+    
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.7);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            max-width: 400px;
+            text-align: center;
+            position: relative;
+            margin: 20px;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px; right: 15px;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>💌 Abra quando...</h1>
+
+    <div class="container">
+        <div class="card" onclick="abrir('Tive um dia ruim', 'Ei meu amor, respira fundo. Você é a mulher mais forte que eu conheço e esse dia ruim não define você. Quando nos vermos, tem um abraço apertado te esperando. Te amo!')">
+            <div class="icon">☁️</div>
+            <h3>...tiver um dia ruim</h3>
+        </div>
+
+        <div class="card" onclick="abrir('Estou com saudades', 'A saudade é só o amor querendo te ver logo. Fecha os olhos e imagina meu beijo. Logo estaremos juntas de novo!')">
+            <div class="icon">👩‍❤️‍💋‍👩</div>
+            <h3>...sentir minha falta</h3>
+        </div>
+
+        <div class="card" onclick="abrir('Quero rir', 'Lembra de todas nossas piadocas e momentos engraçados juntas')">
+            <div class="icon">😂</div>
+            <h3>...quiser dar uma risada</h3>
+        </div>
+
+        <div class="card" onclick="abrir('Dúvida', 'Se você estiver se perguntando: sim, eu estou pensando em você agora. E sim, você está linda hoje e sempre!')">
+            <div class="icon">✨</div>
+            <h3>...estiver insegura</h3>
+        </div>
+        <div class="card" onclick="abrir('Elogio', 'Olhe no espelho agora. Viu essa mulher incrível? Ela é inteligente, talentosa e o motivo do meu sorriso todos os dias. Você é maravilhosa!')">
+    <div class="icon">✨</div>
+    <h3>...precisar de um elogio</h3>
+</div>
+
+<div class="card" onclick="abrir('Nosso Futuro', 'Eu vejo a gente em tantas versões... viajando, adotando um pet, envelhecendo e rindo das mesmas bobagens. Meu futuro é com você.')">
+    <div class="icon">🌍</div>
+    <h3>...duvidar do nosso futuro</h3>
+</div>
+
+<div class="card" onclick="abrir('Orgulho', 'Tenho tanto orgulho da nossa história e da liberdade que construímos juntas. Ser quem somos é minha coisa favorita no mundo. 🏳️‍🌈')">
+    <div class="icon">🌈</div>
+    <h3>...precisar de orgulho</h3>
+</div>
+
+<div class="card" onclick="abrir('Por que te amo?', 'Eu te amo pelo seu jeito de ver o mundo, pela sua risada e pela segurança que sinto ao seu lado. Você é meinha pessoa.')">
+    <div class="icon">❤️</div>
+    <h3>...quiser saber por que eu te amo</h3>
+</div>
+
+<div class="card" onclick="abrir('Vale-Massagem', 'Apresente este card para a sua namorada e ganhe imediatamente uma massagem relaxante com direito a música calma e carinho. Válido a partir de agora!')">
+    <div class="icon">💆‍♀️</div>
+    <h3>...quiser uma massagem</h3>
+</div>
+
+<div class="card" onclick="abrir('Sem sono?', 'Vem cá, me manda uma mensagem agora. Se eu estiver acordada, a gente conversa. Se não, saiba que estou sonhando com você.')">
+    <div class="icon">🌙</div>
+    <h3>...estiver sem sono</h3>
+</div>
+    </div>
+
+    <div id="meuModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="fechar()">&times;</span>
+            <h2 id="modalTitulo" style="color: #d81b60;"></h2>
+            <p id="modalTexto" style="line-height: 1.6; color: #444;"></p>
+        </div>
+    </div>
+
+    <script>
+        function abrir(titulo, texto) {
+            document.getElementById('modalTitulo').innerText = titulo;
+            document.getElementById('modalTexto').innerText = texto;
+            document.getElementById('meuModal').style.display = 'flex';
+        }
+
+        function fechar() {
+            document.getElementById('meuModal').style.display = 'none';
+        }
+
+        // Fechar se clicar fora da caixa
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('meuModal')) {
+                fechar();
+            }
+        }
+    </script>
+</body>
+</html>
