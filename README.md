@@ -28,6 +28,9 @@ O projeto foi construído utilizando as seguintes tecnologias:
 * **CSS3:** Para estilização, layout (Flexbox/Grid) e animações.
 * **JavaScript:** Para a lógica de exibição das mensagens e interatividade.
 
+![Demonstração do Projeto](./demonstracao.png)
+![Demonstração do Projeto](./demonstracao2.png)
+
 ## 🚀 Como Executar o Projeto
 
 Para visualizar o projeto localmente, siga estes passos:
