@@ -1,9 +1,5 @@
 # 💌 Abra Quando (Open When)
 
-![GitHub repo size](https://img.shields.io/github/repo-size/laurabgularte/abra-quando?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/laurabgularte/abra-quando?style=for-the-badge)
-![GitHub last commit](https://img.shields.io/github/last-commit/laurabgularte/abra-quando?style=for-the-badge)
-
 O **Abra Quando** é um projeto web interativo desenvolvido para entregar mensagens personalizadas, fotos ou vídeos em momentos específicos. Inspirado na tradição das cartas físicas "Open When", esta versão digital oferece uma experiência moderna, acessível e cheia de afeto.
 
 ---
