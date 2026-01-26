@@ -47,12 +47,11 @@ Para visualizar o projeto localmente, siga estes passos:
     cd abra-quando
     ```
 3.  **Abra o arquivo principal:**
-    Basta abrir o arquivo `index.html` em qualquer navegador moderno.
+    Basta abrir o arquivo `index.html` em qualquer navegador de sua preferência.
 
 
 ## 👩‍💻 Autora
 
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/laurabgularte)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/laurabgularte/)
 
 ---
